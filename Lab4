@@ -1,0 +1,7 @@
+#!/bin/bash 
+echo "Lab 4"
+fdisk -l /dev/sda
+dd if=/dev/zero of=./64MB.img bs=5M count=64
+mkfs -t ext4 ./64MB.img
+mkdir /mount
+mount ./64MB.img /mount
