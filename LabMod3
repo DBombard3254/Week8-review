@@ -1,0 +1,8 @@
+#! /bin/bash
+echo "Lab 3"
+cd /dev
+ls -l
+echo "Lab 3" > /dev/null
+blkid -k
+lsblk -a
+dd if=/dev/zero of=./Lab3.file bs=5M count=1
